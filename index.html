@@ -4,51 +4,324 @@
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <!-- Compiled and minified CSS -->
   	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-  	  <!-- Custom CSS -->
-  	  <link rel="stylesheet" href="./css/styles.css">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!-- Custom CSS -->
+      <style type="text/css">
+      	#top-bar {
+		    background: #0277bd;
+		    height: 120px;
+		    float: left;
+		    width: 100%;
+		    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+		}
+
+		.body { background-color: #e1f5fe; } /* light-blue lighten-5 */
+		.content {
+		    /*background-color: #fff;*/
+		    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+		    border-radius: 2px;
+		    overflow: hidden;
+		    z-index: 9;
+		    margin-top: -90px;
+		    margin-bottom: 20px;
+		    padding:10px;
+		} /* Main Layout */
+
+		.card-title#fullname{
+			color: #0288d1;
+			width:100%;
+			text-align: center;
+			padding-bottom:5px;
+		} /* Full Name */
+
+		.card-content > h5 {
+			color: #01579b ;
+		} /* Course Name */
+
+		.card.col.s12.m12>h5{
+			color: #01579b ;
+		} /* All Section Title */
+
+		div.card.col.s5.m5 .card-title{
+			font-size: 22px;
+		}
+
+      </style>
     </head>
 
     <body>
+    <section id="top-bar"></section>
     	<div class="container"> <!-- Page content goes here -->
-			<div class="row"></div>
-			<div class="row">
-				<!-- <span class="flow-text">This div is 12-columns wide on all screen sizes</span> -->
-				<div class="col s12 valign-wrapper">
-					<div class="col s4">
-						<img class="responsive-img right" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/8/005/058/02a/031cccf.jpg">
-					</div>
+    		<div class="row">
+			    <div class="col s12 m12">
+			    	<div class="content">
+			    		<div class="col s12 m4 left-side">
+							<div class="card">
+						        <div class="card-image">
+						        	<img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/8/005/058/02a/031cccf.jpg">
+						            <span class="card-title" id="fullname">Mah Kah Why</span>
+						        </div>
+						        <div class="card-content">
+				                	<h5>B.CompSc (Hons.)<br>Software Engineering,<br>Universiti Malaysia Pahang</h5>
+				                	<p>Selangor, Malaysia | eltonmkw@gmail.com</p>
+					            </div>
+					            <div class="card-action">
+					            	<a href="mailto:eltonmkw@gmail.com">Email <i class="material-icons">mail</i></a>
+						            <a href="http://linkedin.com/in/eltonmah/">Linkedin <i class="material-icons">open_in_new</i></a>
+						        </div>
+				    		</div> <!-- div.card ends here -->
+			    		</div> <!-- div.left-side ends here -->
 
-					<div class="col s8">
-						<span class="flow-text">
-							<p>MAH KAH WHY</p>
-							<i class="material-icons left tiny">email</i>
-							<h6><a class="waves-effect waves-teal flat">eltonmkw@gmail.com</a></h6>
-							<i class="material-icons left tiny">open_in_new</i>
-							<h6><a class="waves-effect waves-teal flat" href="http://linkedin.com/in/eltonmah/">Linkedin</a></h6>
-						</span>
-					</div>
-				</div>
-			</div>
+			    		<div class="col s12 m8 right-side">
+				    		<p></p>
+				    		<div class="card col s12 m12">
+				    			<h5><i class="material-icons small">toc</i> Summary</h5>
+								<div class="divider"></div>
+								<div class="section" id="summary">
+									<i class="material-icons tiny">done</i><b>Diploma graduated</b> and currently enrolling as <b>final year degree student</b>.
+									<br><i class="material-icons tiny">done</i>
+									Seeking opportunity to broaden my knowledge and experience to create awesomeness (especially towards <b>business solution</b> and <b>mobile/web application development</b>).
+									<br><i class="material-icons tiny">done</i>
+									Seeking position in industry relevance in <b>mobile application</b> or <b>computer science</b> field.
+								</div>
+							</div> <!-- Summary ends here -->
 
-			<div class="row">
-				<div class="col s10">
-					<div class="card-panel grey lighten-5 z-depth-1">
-					<h5>Summary</h5>
-						<div class="divider"></div>
-						<div class="section" id="summary">
-								<i class="material-icons tiny">done</i><b>Diploma graduated</b> and currently enrolling as <b>final year degree student</b>.
-								<br><i class="material-icons tiny">done</i>
-								Seeking opportunity to broaden my knowledge and experience to create awesomeness (especially towards <b>business solution</b> and <b>mobile/web application development</b>).
-								<br><i class="material-icons tiny">done</i>
-								Seeking position in industry relevance in <b>mobile application</b> or <b>computer science</b> field.
-						</div>
-					</div>
-				</div>
-			</div>
+							<div class="card col s12 m12">
+				    			<h5><i class="material-icons small">work</i> Work History</h5>
+								<div class="divider"></div>
+								<div class="section" id="work-history">
+						    		<div class="block col s4 m3">
+						    			<p>Feb 2013 - Aug 2013</p>
+						    		</div>
+						    		<div class="block col s8 m9">
+						    			<p>
+							    			<h5>Research Assistant</h5>
+							    			<i><h5><a href="http://ibmcoe.ump.edu.my/">IBM Centre of Excellence, UMP, Pahang</a></h5></i>
+							    			Work as a Research Assistant under supervision of Dr. Eric Liew within research field of Medical Image Watermarking
+						    			</p>
+						    		</div>
+						    	</div>
+					    	</div> <!-- Work History ends here -->
+
+					    	<div class="card col s12 m12">
+				    			<h5><i class="material-icons small">assignment_ind</i> Education</h5>
+								<div class="divider"></div>
+								<div class="section" id="education1">
+						    		<div class="block col s4 m3">
+						    			<p>Sept 2013 - Present</p>
+						    		</div>
+						    		<div class="block col s8 m9">
+						    			<p>
+							    			<h5>Bachelor of Computer Science (Software Engineering) with Honours</h5>
+							    			<i><h5><a href="http://www.ump.edu.my/">Universiti Malaysia Pahang</a></h5></i>
+							    			<p>Completed elective subjects:
+							    			<ul>
+								    			<li><i class="material-icons tiny">done</i> BCM3153 - VFX &amp; 3D Animation</li>
+												<li><i class="material-icons tiny">done</i> BCS3113 - Zend PHP Foundation</li>
+												<li><i class="material-icons tiny">done</i> BCC3013 - Zend PHP Higher Structures</li>
+												<li><i class="material-icons tiny">done</i> BCS3283 - Mobile Application Development</li>
+												<li><i class="material-icons tiny">done</i> BCS3413 - Introduction To Integrated Business Process with SAP</li>
+												<li><i class="material-icons tiny">done</i>BCS2203 - Web Application Development</li>
+											</ul></p>
+						    			</p>
+						    		</div>
+						    	</div>
+
+						    	&nbsp<div class="divider"></div>
+						    	<div class="section" id="education2">
+						    		<div class="block col s4 m3">
+						    			<p>Sept 2010 - Aug 2013</p>
+						    		</div>
+						    		<div class="block col s8 m9">
+						    			<p>
+						    				<h5>Diploma of Computer Science</h5>
+							    			<i><h5><a href="http://www.ump.edu.my/">Universiti Malaysia Pahang</a></h5></i>
+							    			<p>CGPA: 3.31</p>
+						    			</p>
+						    		</div>
+						    	</div>
+						    </div> <!-- Education ends here -->
+
+					    	<div class="card col s12 m12">
+				    			<h5><i class="material-icons small">class</i> Certifications</h5>
+								<div class="divider"></div>
+						    	<div class="section" id="certifications1">
+						    		<div class="block col s4 m3">
+						    			<p>Sep 2014 - Present</p>
+						    		</div>
+						    		<div class="block col s8 m9">
+						    			<p>
+						    				<h5>Certified Professional Requirements Engineering Foundation Level (CPRE-FL)</h5>
+							    			<i><h5><a href="http://www.mstb.org/">Malaysia Software Testing Board (MSTB)</a></h5></i>
+							    			<p>License No: <a href="http://www.mstb.org/IREB.php">MY-CPRE-FL-2014-00336</a></p>
+						    			</p>
+						    		</div>
+						    	</div>
+
+						    	&nbsp<div class="divider"></div>
+						    	<div class="section" id="certifications2">
+						    		<div class="block col s4 m3">
+						    			<p>July 2014 - Aug 2014</p>
+						    		</div>
+						    		<div class="block col s8 m9">
+						    			<p>
+							    			<h5>MIT's Global Startup Labs Malaysia 2014</h5>
+							    			<i><h5><a href="http://www.mdec.my/">Multimedia Development Corporation (MDeC)</a></h5></i>
+							    			<p>
+							    				Link: <a href="http://gsl.mit.edu/program/malaysia-summer-2014/">MIT-Global Startup Labs - Malaysia Summer 2014 Website</a><br>
+							    				Account: <a href="http://gsl.mit.edu/accounts/1145/">MIT-GSL Malaysia 2014 - Personal Account</a><br>
+							    				Team: <a href="http://gsl.mit.edu/project/162/">MIT-GSL Malaysia 2014 - Team Project (ShoINS)</a><br>
+							    				<q>... The Best Project Presentation Award was awarded to team SimpleBox Lab with their mobile application ShopINS.</q> - <a href="http://www.thestar.com.my/tech/tech-news/2014/09/08/local-fitness-app-gets-mit-startups-prototype-award/">'The Star Online' Press Source</a>
+						    				</p>
+						    			</p>
+						    		</div>
+						    	</div>
+
+						    	&nbsp<div class="divider"></div>
+						    	<div class="section" id="certifications3">
+						    		<div class="block col s4 m3">
+						    			<p>Apr 2013 - Present</p>
+						    		</div>
+						    		<div class="block col s8 m9">
+						    			<p>
+							    			<h5>IBM Certified Solution Advisor - Cloud Computing Architecture V2</h5>
+							    			<i><h5><a href="http://www.ibm.com/">IBM</a></h5></i>
+							    			<p>
+							    				Link: <a href="https://www.ibm.com/certify/members/profiles.nsf/LinkedInHome?OpenForm&authlinkedin=SR9044OPL2K7B37B4X8">Official Source</a>
+						    				</p>
+						    			</p>
+						    		</div>
+						    	</div>
+
+						    	&nbsp<div class="divider"></div>
+						    	<div class="section" id="certifications4">
+						    		<div class="block col s4 m3">
+						    			<p>June 2012 - Aug 2012</p>
+						    		</div>
+						    		<div class="block col s8 m9">
+						    			<p>
+							    			<h5>Infosys Foundational Computer Science Courses - An Industry Perspective</h5>
+							    			<i><h5><a href="http://www.infosys.com/">Infosys</a></h5></i>
+							    			<p>
+							    				Coursework &amp; Training Modules: <li>
+							    					Introduction to Computer Systems, Problem Solving Techniques, Operating Systems, Programming and Testing, Relational Database Management Systems, Integrated Project of Organization Standard, ORACLE, HTML Java Script, Java and Advance Java, Introduction to J2EE
+							    				</li>
+						    				</p>
+						    			</p>
+						    		</div>
+						    	</div>
+						    	
+					    	</div> <!-- Certifications ends here -->
+
+					    	<div class="card col s12 m12">
+				    			<h5><i class="material-icons small">settings</i> Skills</h5>
+								<div class="divider"></div>
+								<div class="section" id="skills">
+						    		<div class="block col s4 m3">
+						    			<b>Web Development</b>
+						    		</div>
+						    		<div class="block col s8 m9">
+						    			<div class="progress">
+								    		<div class="determinate" style="width: 100%"></div>
+								  		</div>
+						    			<p>
+							    			HTML, CSS, PHP, JavaScript, J2EE, ASP.NET, MySQL, ORACLE
+						    			</p>
+						    		</div>
+						    	</div>
+
+				    			<div class="block col s4 m3">
+					    			<b>Microsoft Office</b>
+					    		</div>
+					    		<div class="block col s8 m9">
+					    			<div class="progress">
+							    		<div class="determinate" style="width: 80%"></div>
+							  		</div>
+					    			<p>
+						    			Microsoft Office Suite (Word, Excel, Powerpoint), Microsoft Visio, Microsoft Project
+					    			</p>
+					    		</div>
+
+					    		<div class="block col s4 m3">
+					    			<b>Mobile Application Development</b>
+					    		</div>
+					    		<div class="block col s8 m9">
+					    			<div class="progress">
+							    		<div class="determinate" style="width: 70%"></div>
+							  		</div>
+					    			<p>
+						    			Java (Native Android), jQuery Mobile, Rhomobile Suite, IBM Worklight
+					    			</p>
+					    		</div>
+
+					    		<div class="block col s4 m3">
+					    			<b>Foreign Language</b>
+					    		</div>
+					    		<div class="block col s8 m9">
+					    			<div class="progress">
+							    		<div class="determinate" style="width: 60%"></div>
+							  		</div>
+					    			<p><ul>
+						    			<li>UHF1121 - GERMAN FOR BEGINNERS</li>
+										<li>UHF2121 - GERMAN FOR INTERMEDIATE</li>
+										<li>UHF1111 - MANDARIN FOR BEGINNERS</li></ul>
+					    			</p>
+					    		</div>
+
+						    </div> <!-- Skills ends here -->
+
+						    <div class="card col s12 m12">
+				    			<h5><i class="material-icons small">supervisor_account</i> Reference</h5>
+								<div class="divider"></div>
+								<div class="section" id="reference">
+									
+									<div class="card col s5 m5">
+										<div class="card-content">
+											<span class="card-title activator grey-text text-darken-4">Dr. Liew Siau Chuin<i class="material-icons right">launch</i></span>
+											<p><b>Senior Lecturer</b></p><br>
+										</div>
+
+										<div class="card-reveal">
+											<span class="card-title grey-text text-darken-4">Address<i class="material-icons right">close</i></span>
+											<p>Faculty of Computer Systems &amp; Software Engineering<br>Universiti Malaysia Pahang<br>Lebuhraya Tun Razak, 26300 Gambang,<br>Kuantan, Pahang, Malaysia.</p>
+    									</div>
+
+    									<div class="card-action">
+    										<a href="mailto:liewsc@ump.edu.my">Email <i class="material-icons">email</i></a>
+						            		<a href="tel:+6095492524">Call <i class="material-icons">call</i></a>
+    									</div>
+									</div> <!-- Reference card #1 cols6m6 ends here -->
+
+									<div class="card col s1 m1"></div>
+									<div class="card col s5 m5">
+										<div class="card-content">
+											<span class="card-title activator grey-text text-darken-4">Nor Azhar Ahmad<i class="material-icons right">launch</i></span>
+											<p><b>Senior Lecturer</b></p><br>
+										</div>
+
+										<div class="card-reveal">
+											<span class="card-title grey-text text-darken-4">Address<i class="material-icons right">close</i></span>
+											<p>Faculty of Computer Systems &amp; Software Engineering<br>Universiti Malaysia Pahang<br>Lebuhraya Tun Razak, 26300 Gambang,<br>Kuantan, Pahang, Malaysia.</p>
+    									</div>
+
+    									<div class="card-action">
+    										<a href="mailto:nazhar@ump.edu.my">Email <i class="material-icons">email</i></a>
+						            		<a href="tel:+609-5492107">Call <i class="material-icons">call</i></a>
+    									</div>
+									</div> <!-- Reference card #2 cols6m6 ends here -->
+								</div>
+							</div> <!-- Reference ends here -->
+
+				    	</div> <!-- div.right-side ends here -->
+					</div><!-- Content Layout ends here -->
+
+					<blockquote>Powered by <a href="http://materializecss.com/">Materialize</blockquote>
+
+				</div><!-- Grid .col .s12 .m12 ends here -->
+			</div> <!-- div.row ends here -->
+		</div> <!-- div.container ends here -->
 
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
